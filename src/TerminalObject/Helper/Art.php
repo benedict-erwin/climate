@@ -87,6 +87,7 @@ trait Art
      */
     protected function artFile($art)
     {
+        //Add compatibility for Windows
         $files = $this->fileSearch($art, '[^' . '\\' . DIRECTORY_SEPARATOR . ']*$');
 
         if (count($files) === 0) {
